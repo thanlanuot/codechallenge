@@ -67,3 +67,4 @@ gem 'bootswatch-rails'
 gem "font-awesome-rails"
 
 gem 'slim'
+gem 'httparty'

@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   
   match '/auth/:provider/callback' => 'sessions#create', via: [:get, :post]
   match '/auth/failure' => 'sessions#failure', via: [:get, :post]
+  
+  get "searchs/call"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
