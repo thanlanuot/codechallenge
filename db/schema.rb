@@ -18,7 +18,8 @@ ActiveRecord::Schema.define(version: 20170722021543) do
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
-    t.string   "email"
+    t.string   "nick_name"
+    t.string   "profile_picture"
     t.string   "instagram_uid"
     t.string   "instagram_token"
     t.datetime "created_at",      null: false
