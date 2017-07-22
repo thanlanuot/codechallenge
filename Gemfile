@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.9'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use pg as the database for Active Record
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -45,3 +45,23 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'faker'
+  gem 'capybara-webkit'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem "launchy"
+  gem 'rack_session_access'
+  gem 'simplecov'
+end
+
+gem 'omniauth'
+gem 'omniauth-oauth2', "1.3.1"
+gem 'omniauth-smartsheet'
+
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+gem 'bootswatch-rails'
+gem "font-awesome-rails"
