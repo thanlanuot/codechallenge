@@ -1,4 +1,6 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "login";
+@import "page";
+@import "jquery.Datatable.min";
+@import "blueimp-gallery.min";

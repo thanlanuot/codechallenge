@@ -1,0 +1,17 @@
+#instagram_gallery.modal.fade role="dialog" 
+  .modal-dialog
+    /! Modal content
+    .modal-content
+      .modal-header
+        button.close data-dismiss="modal" type="button"  &times;
+        h4.modal-title Images Gallery
+      .modal-body
+        #blueimp-gallery-carousel.blueimp-gallery.blueimp-gallery-carousel
+          .slides
+          h3.title
+          a.prev ‹
+          a.next ›
+          a.play-pause
+          ol.indicator
+      .modal-footer
+        button.btn.btn-default data-dismiss="modal" type="button"  Close

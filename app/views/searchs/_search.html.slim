@@ -2,5 +2,39 @@
   .row
     .col-md-2
     .col-md-8.text-center
+      .pull-right.logout
+        = link_to 'Log out', session_path, {:method => :delete}
       h3 Search in Instagram
+  .row.form-group
     .col-md-2
+    .col-md-8
+      .input-group
+        span.input-group-addon Location
+        input#address.form-control aria-describedby="location" placeholder=("Enter Latitude,Longitude") type="text"
+        span.input-group-btn
+            button#pick_map.btn.btn-default.btn-success type="button" Pick from Map
+    .col-md-2
+  .row.form-group
+    .col-md-2
+    .col-md-8
+      .input-group
+        span.input-group-addon Distance
+        input#distance.form-control aria-describedby="distance" type="text" placeholder=("Enter search distance 1 - 5000 (m)")
+    .col-md-2
+  .row.form-group
+    .col-md-2
+    .col-md-8.text-center
+      button#search.btn.btn-primary Search
+    .col-md-2
+  .row.main_table
+    .col-md-2
+    .col-md-8
+      = render :partial => "result"
+    .col-md-2
+  .row.form-group
+    .col-md-2
+    .col-md-8.text-center
+      button#show_gallery.btn.btn-success Show gallery
+    .col-md-2
+= render :partial => "gallery"
+= render :partial => "map"

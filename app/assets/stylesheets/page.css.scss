@@ -1,0 +1,13 @@
+.login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logout {
+  margin-top: 10px;
+}
+#map-canvas {
+  min-height: 250px !important;
+  min-width:100%;
+}

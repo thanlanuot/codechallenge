@@ -1,0 +1,16 @@
+#map_modal.modal.fade role="dialog" 
+  .modal-dialog
+    /! Modal content
+    .modal-content
+      .modal-header
+        button.close data-dismiss="modal" type="button"  &times;
+        h4.modal-title Pick a location
+      .modal-body
+        .form-group
+          .input-group
+            span.input-group-addon Address
+            input#map_address.form-control aria-describedby="location" placeholder=("Enter your address") type="text"
+        div#map-canvas
+      .modal-footer
+        button.btn.btn-default data-dismiss="modal" type="button"  Close
+script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTiT75yZ5OWYHn3w0QEgtqsTgqvWT0Upw" 
