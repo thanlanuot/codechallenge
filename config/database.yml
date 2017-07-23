@@ -16,7 +16,5 @@ development:
 test:
   <<: *default
   database: wonolo_instagram_test
-
 production:
-  <<: *default
-  database: wonolo_instagram_prod
+  url: <%= ENV['DATABASE_URL'] %>
