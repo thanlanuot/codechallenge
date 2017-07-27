@@ -89,6 +89,8 @@ RSpec.configure do |config|
 end
 
 Capybara::Webkit.configure do |config|
+  config.allow_url("maps.googleapis.com")
+  config.allow_url("csi.gstatic.com")
 end
 
 #capture screenshot when test failed
