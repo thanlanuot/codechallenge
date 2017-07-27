@@ -159,7 +159,7 @@ GEM
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
-    pg (0.21.0)
+    pg (0.20.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -300,7 +300,7 @@ DEPENDENCIES
   omniauth
   omniauth-instagram
   omniauth-oauth2
-  pg
+  pg (= 0.20)
   rack_session_access
   rails (= 4.2.9)
   rspec-rails
