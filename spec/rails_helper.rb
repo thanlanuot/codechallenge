@@ -91,6 +91,9 @@ end
 Capybara::Webkit.configure do |config|
   config.allow_url("maps.googleapis.com")
   config.allow_url("csi.gstatic.com")
+  config.allow_url("scontent.cdninstagram.com")
+  config.allow_url("maps.gstatic.com")
+  config.allow_url("fonts.googleapis.com")
 end
 
 #capture screenshot when test failed
