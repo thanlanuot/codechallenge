@@ -61,6 +61,10 @@ $(document).ready(function() {
           container: '#blueimp-gallery-carousel',
           carousel: true
         });
+        setTimeout(function(){
+          gallery.initSlides(true);
+        }, 300)
+        
       }
     });
     
